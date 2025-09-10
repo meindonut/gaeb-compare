@@ -1,4 +1,4 @@
-PS commands for Installation:
+commands for manual installation:
 
 python -m venv .venv
 Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
@@ -15,21 +15,6 @@ pip install scikit-learn        # for file comparision
 pip install pyinstaller         # for dist
 pip install pytest              # for testing
 
-PS commands for dist:
-Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
-.venv/Scripts/activate.ps1
-pyinstaller --noconsole --clean --name LV_Pruefer --add-data "data/german.pickle:data" lv_explorer/main.py
-
-PS command after UI edit:
-Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
-.venv/Scripts/activate.ps1
-pyside6-uic ui/project_window.ui -o lv_explorer/ui_project_window.py
-
-PS command for testing:
-Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force
-.venv/Scripts/activate.ps1
-pytest -v -m unit           # unit tests
-pytest -v -m integration    # integration tests
 
 Bugs:
 - 
