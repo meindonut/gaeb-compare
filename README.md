@@ -29,7 +29,7 @@ download *.exe file
 
 `pytest -v -m integration    # integration tests`
 
-### build:
+### build
 
 `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force`
 
@@ -37,7 +37,7 @@ download *.exe file
 
 `pyinstaller --noconsole --clean --name LV_Pruefer --add-data "data/german.pickle:data" lv_explorer/main.py`
 
-### create ui code:
+### create ui code
 
 `Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process -Force`
 
@@ -45,5 +45,5 @@ download *.exe file
 
 `pyside6-uic ui/project_window.ui -o lv_explorer/ui_project_window.py`
 
-## To-Dos:
+## To-Dos
 - ...
