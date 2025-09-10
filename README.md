@@ -3,7 +3,7 @@ opens GAEB files, finds similaritites and compares them visually
 
 ![Screenshot of the example import.](example_screenshot.jpg)
 
-It uses [gaeb-parser](https://github.com/meindonut/gaeb-parser) to import gaeb files. The import process includes a tokenizer [nltk](https://www.nltk.org/index.html) and formatting process to standardize the text and prepare it for comparison. In the import process the positions can be linked to already imported files to compare them later. The comparison between positions is done with [difflibparser](https://github.com/yelsayd/difflibparser) or [diff-match-patch](https://github.com/google/diff-match-patch) The imported positions are handled in an excel database. The UI is designed with [PySide](https://wiki.qt.io/Qt_for_Python). 
+It uses [gaeb-parser](https://github.com/meindonut/gaeb-parser) to import gaeb files. The import process includes a tokenizer ([nltk](https://www.nltk.org/index.html)) and a formatting process to standardize the text and prepare it for comparison. In the import process the positions can be linked to already imported files to compare them later. The comparison between positions is done with [difflibparser](https://github.com/yelsayd/difflibparser) or [diff-match-patch](https://github.com/google/diff-match-patch). The imported positions are handled in an excel database. The UI is designed with [PySide](https://wiki.qt.io/Qt_for_Python). 
 
 ## Use it:
 download latest zipped release file
