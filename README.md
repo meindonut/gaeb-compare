@@ -6,7 +6,7 @@ opens GAEB files, finds similaritites and compares them visually
 ## Use it:
 download *.exe file
 
-## Change it:
+## Improve it:
 
 ### Install required modules in venv
 
