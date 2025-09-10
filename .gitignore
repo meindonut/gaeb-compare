@@ -3,3 +3,5 @@
 /tests/__pycache__
 /tests/test_project/Pruefdatei GAEB DA XML 3.3 - Bauausfuehrung - V 04 04 2024
 ui/GUI.pptx
+/build
+/dist
