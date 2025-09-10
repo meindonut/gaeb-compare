@@ -4,7 +4,7 @@ opens GAEB files, finds similaritites and compares them visually
 ![Screenshot of the example import.](example_screenshot.jpg)
 
 ## Use it:
-download *.exe file
+download latest zipped release file
 
 ## Improve it:
 
