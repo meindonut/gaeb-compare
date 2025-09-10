@@ -275,7 +275,7 @@ class Ui_MainWindow(object):
     # setupUi
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"LV Pr\u00fcfer", None))
+        MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"GAEB Compare", None))
         self.actionOpen.setText(QCoreApplication.translate("MainWindow", u"Ordner \u00f6ffnen", None))
         self.actionExit.setText(QCoreApplication.translate("MainWindow", u"Beenden", None))
         self.actionLinksCreate.setText(QCoreApplication.translate("MainWindow", u"Erstellen", None))

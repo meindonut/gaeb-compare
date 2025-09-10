@@ -9,7 +9,7 @@ class StartupWindow(QWidget):
         self.init_ui()
 
     def init_ui(self):
-        self.setWindowTitle("LV Prüfer: Start")
+        self.setWindowTitle("GAEB Compare: Start")
         self.setFixedSize(300, 100)  # Set fixed window size
 
         # Main Layout (Vertical)
@@ -17,7 +17,7 @@ class StartupWindow(QWidget):
         layout.setContentsMargins(5, 5, 5, 5)  # Adjust margins for spacing
 
         # Example text (Wrapped with alignment)
-        self.label = QLabel("Willkommen beim LV Prüfer \n\nBitte öffne einen Projektordner.")
+        self.label = QLabel("Willkommen bei GAEB Compare \n\nBitte öffne einen Projektordner.")
         self.label.setWordWrap(True)  # Allow text wrapping
         self.label.setAlignment(Qt.AlignLeft)  # Center align text
         layout.addWidget(self.label)
