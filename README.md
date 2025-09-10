@@ -35,7 +35,7 @@ download *.exe file
 
 `.venv/Scripts/activate.ps1`
 
-`pyinstaller --noconsole --clean --name LV_Pruefer --add-data "data/german.pickle:data" lv_explorer/main.py`
+`pyinstaller --noconsole --clean --name gaeb_compare --add-data "data/german.pickle:data" gaeb_compare/main.py`
 
 ### create ui code
 
@@ -43,7 +43,7 @@ download *.exe file
 
 `.venv/Scripts/activate.ps1`
 
-`pyside6-uic ui/project_window.ui -o lv_explorer/ui_project_window.py`
+`pyside6-uic ui/project_window.ui -o gaeb_compare/ui_project_window.py`
 
 ## To-Dos
 - ...
