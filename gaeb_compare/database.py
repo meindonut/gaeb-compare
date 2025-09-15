@@ -100,7 +100,7 @@ class LvDatabase:
         self._df_abbreviations = pd.DataFrame()
         self.db_path = project_path + "\\" + "database.xlsx"
         self.file_manager = file_manager
-        self.header_excel = ['Projekt', 'OZ', 'Gewerk', 'Untergewerk', 'Kurztext', 'Qty', 'QU', 'TLK', 'Pfad', 'Basis', 'Link']
+        self.header_excel = ['Projekt', 'OZ', 'Gewerk', 'Untergewerk', 'Kurztext', 'Qty', 'QU', 'TLK', 'Info', 'Pfad', 'Basis', 'Link']
         self.header_intern = self.header_excel.copy().extend(['calc_links', 'calc_similarity','Langtext'])
 
     @property
@@ -225,7 +225,7 @@ class LvDatabase:
         self._df[column_name] = long_texts
 
     def prepare_for_database(self, lv_df: pd.DataFrame, paths: list, is_base_lv = False):
-        lv_df_s = lv_df[['Projekt', 'OZ', 'Gewerk', 'Untergewerk', 'Kurztext', 'Qty', 'QU', 'TLK']]
+        lv_df_s = lv_df[['Projekt', 'OZ', 'Gewerk', 'Untergewerk', 'Kurztext', 'Qty', 'QU', 'TLK', 'Info']]
         lv_df_s['Pfad'] = self.file_manager.get_rel_paths_of(paths)  # <- should be changed to substract project path
         lv_df_s['Basis'] = is_base_lv
         lv_df_s['Link'] = None
@@ -532,6 +532,6 @@ class LvDatabase:
     
     def get_ui_parameters(self, id):
         row = self.get_rows_of_index(id)
-        row_filtered = row[['Kurztext', 'Qty', 'QU', 'TLK', 'OZ']]
+        row_filtered = row[['Kurztext', 'Qty', 'QU', 'TLK', 'OZ', 'Info']]
         row_filtered = row_filtered.fillna('')
         return row_filtered.to_dict()
